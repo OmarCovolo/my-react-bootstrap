@@ -1,21 +1,16 @@
-import { render } from '@testing-library/react';
+
 import fantasy from '../books/fantasy.json';
-import history from '../books/history.json';
-import horror from '../books/horror.json';
-import romance from '../books/romance.json';
-import scifi from '../books/scifi.json';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 const AllTheBooks =()=>{
      return(
-        fantasy.map((fantasybooks)=>{
+        fantasy.map((books)=>{
             return(
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src={fantasybooks.img }/>
+          <Card.Img variant="top" src={books.img }/>
           <Card.Body>
-            <Card.Title>{fantasybooks.title}</Card.Title>
+            <Card.Title>{books.title}</Card.Title>
             <Card.Text>
-              {fantasybooks.category}
+              {books.category}
             </Card.Text>
           </Card.Body>
         </Card>
