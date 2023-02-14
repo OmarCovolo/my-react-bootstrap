@@ -1,10 +1,10 @@
 import{Row,Col, Form}from "react-bootstrap"
-import { SingleBook } from "./SingleBook.jsx"
+import  SingleBook  from "./SingleBook"
 import { Component } from "react"
-import{CommentArea} from "./CommentArea.jsx"
+import CommentArea from "./CommentArea"
 
 
-class BooKList extends Component{
+class BookList extends Component{
     state={
         searchQuery:"",
         selectedBookAsin:""
@@ -48,4 +48,4 @@ class BooKList extends Component{
 
 
 }
-export default BooKList
+export default BookList;

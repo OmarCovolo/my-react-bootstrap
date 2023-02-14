@@ -1,8 +1,5 @@
 import { Component } from "react";
 import CommentList from "./CommentList";
-import AddComment from "./AddComment"
-import Loading from "./Loading"
-import Error from "./Error"
 
 class CommentArea extends Component{
     state={
@@ -37,9 +34,9 @@ class CommentArea extends Component{
             return(
                 <div className="text-center">
                     {this.state.isLoading && <h2> seleziona un libro</h2>}
-                    {this.state.isError&&<Error/>}
+                   
 
-                <AddComment asin={this.props.asin}/>
+               
                 <CommentList commentsToShow={this.state.comments}/>
                 </div>
             )
